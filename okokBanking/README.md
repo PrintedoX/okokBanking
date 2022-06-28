@@ -5,6 +5,7 @@ Discord server: https://discord.gg/FauTgGRUku
 
 1. First of all add the required tables to your database, executing the following code:
 
+```
 CREATE TABLE `okokBanking_transactions`	(
 	`id` int(11) NOT NULL AUTO_INCREMENT,
 	`receiver_identifier` varchar(255) NOT NULL,
@@ -28,7 +29,7 @@ CREATE TABLE `okokBanking_societies`	(
 ALTER TABLE `players` ADD COLUMN `iban` varchar(255) NULL DEFAULT NULL;
 
 ALTER TABLE `players` ADD COLUMN `pincode` int(50) NULL DEFAULT NULL;
-
+```
 2. To add salary/paycheck transactions navigate to 'qb-core/server' and open 'loops.lua'.
 
 2.1. Replace all the code with the following:
