@@ -33,7 +33,7 @@ ALTER TABLE `players` ADD COLUMN `pincode` int(50) NULL DEFAULT NULL;
 2. To add salary/paycheck transactions navigate to 'qb-core/server' and open 'loops.lua'.
 
 2.1. Replace all the code with the following:
-
+```
 PaycheckLoop = function()
 	local Players = QBCore.Functions.GetPlayers()
 
@@ -48,5 +48,5 @@ PaycheckLoop = function()
 	end
 	SetTimeout(QBCore.Config.Money.PayCheckTimeOut * (60 * 1000), PaycheckLoop)
 end
-
+```
 3. To replace the "okokBanking" logo, simply replace it with yours on the 'web' folder.
