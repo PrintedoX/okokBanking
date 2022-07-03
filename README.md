@@ -59,4 +59,4 @@ PaycheckLoop = function()
 	SetTimeout(QBCore.Config.Money.PayCheckTimeOut * (60 * 1000), PaycheckLoop)
 end
 ```
-3. To replace the "okokBanking" logo, simply replace it with yours on the 'web' folder.
+3. To replace the "okokBanking" logo, simply replace it with yours on the 'web' folder. 
